@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx --yes node --version)",
+      "Bash(python3 -:*)",
+      "Bash(cmd.exe /c \"python --version\")",
+      "Bash(cmd.exe /c \"node --version\")",
+      "Bash(TaskOutput bbjsxgqa3:*)",
+      "Bash(TaskOutput bovcmkkxa:*)",
+      "Read(//c/Users/ASUS/AppData/Local/Programs/Python//**)",
+      "Read(//c/Program Files/**)",
+      "Bash(\"/c/Users/ASUS/AppData/Local/Programs/Python/Python313/python.exe\" test_50.py)"
+    ]
+  }
+}

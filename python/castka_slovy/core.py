@@ -2,10 +2,10 @@ import math
 import re
 
 RADY = [
-    ["", "", ""],                     
-    ["tisíc", "tisíce", "tisíc"],      
-    ["milion", "miliony", "milionů"],   
-    ["miliarda", "miliardy", "miliard"] 
+    ["", "", ""],
+    ["tisíc",   "tisíc",    "tisíce" ],
+    ["milionů", "milion",   "miliony"],
+    ["miliard", "miliarda", "miliardy"]
 ]
 
 STOVKY = ["", "sto", "dvě stě", "tři sta", "čtyři sta", "pět set", "šest set", "sedm set", "osm set", "devět set"]

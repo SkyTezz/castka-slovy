@@ -1,10 +1,10 @@
 'use strict';
 
 const RADY = [
-    ["", "", ""],                       // 0: Jednotky
-    ["tisíc", "tisíce", "tisíc"],       // 1: Tisíce
-    ["milion", "miliony", "milionů"],   // 2: Miliony
-    ["miliarda", "miliardy", "miliard"] // 3: Miliardy
+    ["", "", ""],                          // 0: Jednotky
+    ["tisíc",   "tisíc",    "tisíce" ],    // 1: Tisíce  [5+, 1, 2-4]
+    ["milionů", "milion",   "miliony"],    // 2: Miliony  [5+, 1, 2-4]
+    ["miliard", "miliarda", "miliardy"],   // 3: Miliardy [5+, 1, 2-4]
 ];
 
 const STOVKY = ["", "sto", "dvě stě", "tři sta", "čtyři sta", "pět set", "šest set", "sedm set", "osm set", "devět set"];
