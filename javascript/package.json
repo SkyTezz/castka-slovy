@@ -1,6 +1,6 @@
 {
   "name": "castka-slovy",
-  "version": "1.0.0",
+  "version": "1.0",
   "description": "Převod číselné částky na slova v češtině / Convert monetary amounts to Czech words",
   "main": "index.js",
   "types": "index.d.ts",
