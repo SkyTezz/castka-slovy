@@ -26,7 +26,6 @@ def sklonuj_slovo(cislo, tvary):
 
 def ziskej_jednotku(cislo, index_radu, rod):
     if cislo == 0: return ""
-    if index_radu == 1 and cislo == 1: return "" 
 
     if cislo == 1:
         if index_radu == 3 or (index_radu == 0 and rod == 'F'): return "jedna"
@@ -41,6 +40,8 @@ def ziskej_jednotku(cislo, index_radu, rod):
 
 def zpracuj_trojcisli(cislo, index_radu, rod='M'):
     if cislo == 0: return ""
+    # Neříkáme "jeden tisíc" jen u samotné tisícovky; 21 000 = "dvacet jeden tisíc".
+    if index_radu == 1 and cislo == 1: return ""
 
     slova = []
     pocet_stovek = cislo // 100

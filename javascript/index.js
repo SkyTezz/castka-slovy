@@ -26,7 +26,6 @@ function sklonujSlovo(cislo, tvary) {
 
 function ziskejJednotku(cislo, indexRadu, rod) {
     if (cislo === 0) return "";
-    if (indexRadu === 1 && cislo === 1) return ""; // Neříkáme "jeden tisíc"
 
     if (cislo === 1) {
         if (indexRadu === 3 || (indexRadu === 0 && rod === 'F')) return "jedna";
@@ -43,6 +42,8 @@ function ziskejJednotku(cislo, indexRadu, rod) {
 
 function zpracujTrojcisli(cislo, indexRadu, rod = 'M') {
     if (cislo === 0) return "";
+    // Neříkáme "jeden tisíc" jen u samotné tisícovky; 21 000 = "dvacet jeden tisíc".
+    if (indexRadu === 1 && cislo === 1) return "";
 
     let slova = [];
     let pocetStovek = Math.floor(cislo / 100);
